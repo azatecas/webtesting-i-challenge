@@ -14,20 +14,25 @@ function succeed(item) {
 }
 
 function fail(item) {
-
-  switch (item) {
-    case item.enhancement < 15:      
-      return {...item, durability: item.durability - 5 }
-    case item.enhancement > 16:
-      return {...item, enhancement: item.enhancement - 1 }
-    case item.enhancement >= 15:
-      return {...item, durability: item.durability - 10 }  
+  let newItem = {};
+  switch (true) {    
+    case (item.enhancement < 15):   
+      newItem = {...item, durability: item.durability - 5 }   
+      return newItem;
+    case (item.enhancement > 16):
+      
+      newItem = {...item, enhancement: item.enhancement - 1 }
+      return newItem;
+    case (item.enhancement >= 15):
+      newItem = {...item, durability: item.durability - 10 }
+      return newItem;  
     default:
-      return item;
+      console.log('********************************************************************************************************************************************************************************',item)
+      newItem = {...item};
+      return newItem;
   }
 
-  return item;
-
+  
 
 
   // if(item.enhancement < 15){
