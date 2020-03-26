@@ -59,6 +59,12 @@ The following sections list information provided by the client about `items` and
 - The item's `enhancement` it's a number from 0 to 20.
 - The item's `durability` it's a number from 0 to 100.
 
+- Item = {
+    name: "test",
+    durability: 0 - 100,
+    enhancement: 0 - 20
+  }
+
 ### When enhancement succeeds
 
 - The item's enhancement increases by 1.
