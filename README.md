@@ -9,6 +9,8 @@ Some of the topics covered were:
 - writing unit tests for JavaScript functions.
 - the _Test Driven Development (TDD)_ workflow.
 
+
+
 ## Instructions
 
 **Read these requirements carefully. Understand exactly what is expected _before_ starting.**
@@ -56,6 +58,12 @@ The following sections list information provided by the client about `items` and
 - Items have `name`, `durability` and `enhancement`.
 - The item's `enhancement` it's a number from 0 to 20.
 - The item's `durability` it's a number from 0 to 100.
+
+- Item = {
+    name: "test",
+    durability: 0 - 100,
+    enhancement: 0 - 20
+  }
 
 ### When enhancement succeeds
 
